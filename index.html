@@ -1,0 +1,359 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>학원가는 도시의 다양성이 낮을까?</title><style>
+:root{--bg:#fff;--fg:#1f2430;--mut:#667085;--line:#e4e7ec;--acc:#b2182b;--soft:#f7f8fa}
+@media (prefers-color-scheme: dark){:root{--bg:#14171f;--fg:#e8eaf0;--mut:#9aa3b5;--line:#2a3042;--acc:#ff8a80;--soft:#1b2030}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font-family:"Malgun Gothic","Apple SD Gothic Neo",sans-serif;line-height:1.75;font-size:16px}
+main{max-width:980px;margin:0 auto;padding:32px 20px 80px}
+h1{font-size:2rem;line-height:1.3;margin:.2em 0 .6em}h2{font-size:1.5rem;margin:2em 0 .6em;padding-top:.6em;border-top:2px solid var(--line)}
+h3{font-size:1.2rem;margin:1.6em 0 .4em;color:var(--acc)}h4{font-size:1.05rem;margin:1.2em 0 .3em}
+blockquote{margin:1em 0;padding:.4em 1.1em;border-left:4px solid var(--acc);background:var(--soft);border-radius:0 8px 8px 0}blockquote p{margin:.5em 0}
+table{border-collapse:collapse;width:100%;margin:1em 0;font-size:.93rem;display:block;overflow-x:auto}th,td{border:1px solid var(--line);padding:.5em .7em;text-align:left;vertical-align:top}th{background:var(--soft);white-space:nowrap}
+code{background:var(--soft);padding:.1em .35em;border-radius:4px;font-size:.9em}pre{background:var(--soft);padding:1em;border-radius:8px;overflow-x:auto;font-size:.82rem;line-height:1.5}
+figure{margin:1.4em 0;text-align:center}figure img{max-width:100%;height:auto;border:1px solid var(--line);border-radius:8px;background:#fff}
+details{margin:.6em 0;color:var(--mut)}summary{cursor:pointer;font-size:.88rem}
+li{margin:.25em 0}ul,ol{padding-left:1.5em}
+.toc{background:var(--soft);border:1px solid var(--line);border-radius:10px;padding:.8em 1.2em;margin:1.2em 0;font-size:.92rem}.toc ul{list-style:none;padding:0;margin:0}.toc li.l3{padding-left:1.2em;color:var(--mut)}.toc li.l2{font-weight:700;margin-top:.4em}
+.meta{color:var(--mut);font-size:.88rem}
+main>section.md:first-of-type h2{font-size:1.15rem;color:var(--acc);border-top:0;margin:1.2em 0 .2em;padding-top:0;letter-spacing:.08em}
+main>section.md:first-of-type blockquote{padding:.9em 1.3em;font-size:1.12rem;border-left-width:6px}
+main>section.md:first-of-type blockquote p{margin:.2em 0;font-weight:700;line-height:1.6}
+</style>
+<script>window.MathJax={tex:{inlineMath:[['$','$']],displayMath:[['$$','$$']]}};</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js"></script></head>
+<body><main>
+<p class="meta">스마트시티 융합기술세미나 · 과제3: 도시 현상을 지표로 측정하고 공간적으로 해석하기</p>
+<section class="md"><h1>학원가는 도시의 다양성이 낮을까?</h1>
+<h2>요약</h2>
+<blockquote><p><strong>결론.</strong> 학원가의 업종 다양성은 학원을 포함하면 다소 낮지만, 학원을 제외하면 서울의 다른 동과 차이가 거의 없다. 낮은 다양성은 학원이라는 큰 업종에서 비롯된 것으로 해석된다.</p></blockquote>
+<p><strong>분석 개요</strong></p>
+<ul><li>대상: 서울 400개 행정동, 2026년 2분기</li><li>학원: 일반교습학원(청소년 입시·보습 학원의 대표 업종)</li><li>지표: 학원 입지계수(LQ), 학생 1인당 학원 매출(학원 밀도), 업종 다양성(Gini–Simpson), 용도지역 비율</li></ul>
+<table><thead><tr><th>질문</th><th>답</th><th>핵심 수치</th></tr></thead><tbody><tr><td>① 학원은 어디에 몰려 있는가</td><td>소수의 동에 몰려 있고, 여러 거점으로 나뉜다</td><td>학원 특화 동(LQ 1.5 이상, 학원 비중이 서울 평균보다 10%p 이상 높은 동) 29곳. LQ 상위는 목5동 16.2, 중계1동 13.4, 대치1동 11.6</td></tr><tr><td>② 학생 수에 비해 학원 매출이 가장 큰 곳은 어디인가</td><td>대치4동, 명일2동, 대치2동 (노량진2동은 예외)</td><td>학생 1인당 학원 매출은 대치4동 588만 원(분기)으로 서울 동 중앙값 22만 원의 약 27배</td></tr><tr><td>③ 학원가는 업종이 단조로운가</td><td>학원을 포함하면 다소 낮고, 제외하면 차이가 거의 없다</td><td>Gini–Simpson 중앙값 학원 특화 동 0.871 대 그 외 동 0.890. 학원 제외 시 0.896 대 0.885</td></tr><tr><td>④ 학원가는 어떤 토지이용 위에 있는가</td><td>준주거·상업지역이 아니라 주거지역, 그중에서도 제3종일반주거(중·고층 주택 중심)</td><td>제3종일반주거 비율 중앙값 51% 대 23%, LQ와의 상관계수 +0.39. 전용·제1·2종일반주거와는 상관이 없음(−0.07)</td></tr></tbody></table>
+<p><strong>시사점</strong></p>
+<ul><li>학원가는 업종이 단조로운 동네라기보다, 주거지의 일반적인 상권에 학원이 크게 더해진 동네로 보인다(추정).</li><li>학원가 안에서도 유형이 갈린다. 목5동과 중계1동은 학원 외 상권이 평균 이상이고, 돈암1동은 학원 외 상권도 약하다.</li></ul>
+<p><strong>한계:</strong> 추정 매출, 점포 소재지 기준, 한 분기의 단면, 인과관계가 아닌 상관관계</p></section>
+<nav class="toc"><strong>목차</strong><ul><li class="l2">요약</li><li class="l2">1. 연구 질문과 분석 대상</li><li class="l2">2. 사용 자료와 전처리</li><li class="l2">3. 지표 정의, 계산식, 해석</li><li class="l3">지표 1. 학원 입지계수 LQ: 학원은 어디에 몰려 있는가</li><li class="l3">지표 2. 학생 1인당 학원 매출(학원 밀도, Density): 학생 수에 비해 학원 매출은 어디에서 가장 큰가 (직접 설계)</li><li class="l3">지표 3. 업종 다양성 Gini–Simpson: 학원가는 업종이 단조로운가</li><li class="l3">보조 변수. 용도지역 비율: 도시 구조와의 연결</li><li class="l2">4. 결과</li><li class="l3">4-1. 학원은 서울 어디에 몰려 있는가 (LQ)</li><li class="l3">4-2. 학생 1인당 학원 매출은 어디에서 가장 큰가 (학원 밀도)</li><li class="l3">4-3. 학원가는 업종이 단조로운가: 공간 패턴</li><li class="l3">4-4. 학원 비중과 업종 다양성의 관계</li><li class="l3">4-5. 학원가는 어떤 토지이용 위에 있는가 (용도지역)</li><li class="l2">5. 종합 해석</li></ul></nav>
+<section class="md"><h2>1. 연구 질문과 분석 대상</h2>
+<p><strong>연구 질문</strong></p>
+<blockquote><p>학원가는 도시의 다양성이 낮을까?</p></blockquote>
+<p>여기서 <strong>도시의 다양성</strong>은 동네 상권의 <strong>업종 다양성</strong>, 즉 매출이 여러 업종에 고르게 나뉘어 있는 정도를 뜻한다. <strong>학원가</strong>는 학원이 서울 평균보다 두드러지게 몰린 동("학원 특화 동")으로 정의한다. 이 질문을 세 가지로 나누어 확인한다.</p>
+<ol><li><strong>분포:</strong> 학원은 서울 어디에 몰려 있는가? (학원 입지계수 LQ, 학생 1인당 학원 매출)</li><li><strong>다양성:</strong> 학원이 몰린 동네는 업종이 단조로운가? 학원을 제외하고 보아도 그런가? (Gini–Simpson 지수)</li><li><strong>도시 구조:</strong> 학원가는 어떤 토지이용 위에 있는가? (용도지역 비율)</li></ol>
+<p><strong>왜 이 질문인가.</strong> 학원가는 흔히 학원만 가득한 단조로운 동네로 여겨진다. 이 인상이 맞는지, 맞다면 학원 때문인지 학원 외 상권도 약한 것인지를 도시 지표로 측정해 확인하려고 한다.</p>
+<table><thead><tr><th>항목</th><th>내용</th></tr></thead><tbody><tr><td>공간 범위</td><td>서울특별시 행정동. 매출이 있는 업종이 20개 이상인 400개 동을 분석하고, 2025년 경계와 맞는 398개 동을 지도로 나타냄</td></tr><tr><td>시간 범위</td><td>2026년 2분기(매출), 2026년 4~6월 평일 평균(생활인구)</td></tr><tr><td>"학원"의 정의</td><td>상권분석서비스의 <strong>일반교습학원</strong> 업종. 한국표준산업분류의 '일반 교과학원'에 해당하며, 국어·수학 등 교과 중심의 입시·보습 학원이다</td></tr><tr><td>학원가의 정의</td><td>"학원 특화 동": 학원 비중이 서울 평균의 1.5배(LQ 1.5) 이상이면서 서울 평균보다 10%p 이상 높은 동(29곳)</td></tr><tr><td>공간 단위</td><td>행정동</td></tr></tbody></table>
+<blockquote><p>학원을 일반교습학원 하나로 한정한 이유: 일반교습이 학원 4개 업종(일반교습·외국어·예술·스포츠 강습) 매출의 73%를 차지하고 결제자의 92%가 40~50대(학부모 연령)이기 때문이다(모두 2025년 기준). 외국어·예술학원을 합친 3개 업종으로 계산한 학원 밀도와도 동 사이 순위가 거의 같았다(상관계수 0.93).</p></blockquote></section><section class="md"><h2>2. 사용 자료와 전처리</h2>
+<table><thead><tr><th>자료</th><th>출처</th><th>내용</th><th>용도</th></tr></thead><tbody><tr><td>상권분석서비스 추정매출(행정동)</td><td>서울 열린데이터광장, 서울신용보증재단</td><td>행정동 × 업종(63개 생활밀착 업종) × 분기별 추정 매출액. 2026년 2분기 사용</td><td>학원 비중(LQ), 학원 밀도의 분자, 다양성</td></tr><tr><td>행정동별 연령별 생활인구(내국인)</td><td>서울 열린데이터광장 생활인구</td><td>행정동 × 시간대(3시간 간격) × 연령대. 0~9세, 10~14세, 15~19세 사용</td><td>학원 밀도의 분모</td></tr><tr><td>행정동 경계</td><td>수업 자료(6강) <code>HangJeongDong_ver20250101.geojson</code></td><td>2025년 1월 기준 행정동 폴리곤</td><td>지도, 이웃 관계, 용도지역 겹침</td></tr><tr><td>용도지역(도시지역)</td><td>도시계획정보서비스(UPIS) <code>UPIS_C_UQ111</code> (2026.09)</td><td>전용·일반주거, 준주거, 상업, 공업(준공업)지역 폴리곤</td><td>도시 구조와의 연결(보조 변수)</td></tr></tbody></table>
+<p><strong>전처리 과정</strong></p>
+<ol><li><strong>업종과 기간:</strong> 63개 업종의 2026년 2분기 매출을 동 × 업종 표로 만들었다. 매출이 0인 항목은 제외했다.</li><li><strong>불안정한 동 제외:</strong> 매출이 있는 업종이 20개 미만인 동은 점포 하나만 바뀌어도 비중이 크게 흔들리므로 제외했다. 400개 동이 남는다.</li><li><strong>0~19세 생활인구:</strong> 월별 자료(2026년 4~6월)의 평일 평균을 일수로 가중평균하고, 0~9세, 10~14세, 15~19세를 더했다. 하루 8개 시간대의 평균이라 학교에 있는 시간도 포함된다. 생활인구가 500명 미만인 동은 분모가 작아 학원 밀도 계산에서 제외했다(391개 동).</li><li><strong>결합:</strong> 매출은 8자리 행정동 코드를, 경계 파일은 10자리 <code>adm_cd2</code>를 쓰므로 앞 8자리로 맞췄다.</li><li><strong>용도지역:</strong> 용도지역 폴리곤을 서로 겹치지 않는 네 구분으로 묶고, 행정동과 겹치는 면적을 계산했다.<ul><li><strong>전용·제1·2종일반주거:</strong> 제1·2종전용주거지역, 제1·2종일반주거지역(자료의 '제2종일반주거지역(7층이하)'와 세분이 지정되지 않은 '일반주거지역' 포함)</li><li><strong>제3종일반주거:</strong> 제3종일반주거지역</li><li><strong>준주거·상업:</strong> 준주거지역, 중심·일반·근린·유통상업지역</li><li><strong>공업:</strong> 자료상 준공업지역</li><li>비율은 네 구분의 면적 합(시가지) 대비다. 녹지지역과 그 밖의 도시지역은 제외했다.</li></ul></li></ol></section><section class="cell"><details class="code"><summary>코드 보기</summary><pre>import numpy as np
+import pandas as pd
+import geopandas as gpd
+import glob
+import matplotlib.pyplot as plt
+import matplotlib.patheffects as pe
+from matplotlib.patches import Patch
+from scipy.stats import spearmanr   # 순위 기준 상관계수 계산에만 사용
+
+plt.rc(&quot;font&quot;, family=&quot;Malgun Gothic&quot;)
+plt.rc(&quot;axes&quot;, unicode_minus=False)
+pd.set_option(&quot;display.width&quot;, 200)
+
+ACADEMY = &quot;일반교습학원&quot;   # 청소년 입시·보습 학원의 대표 업종 (한국표준산업분류 &#x27;일반 교과학원&#x27;에 해당)
+N_IND = 63                # 상권분석서비스 생활밀착 업종 수
+MIN_IND = 20              # 매출이 있는 업종이 이보다 적은 동은 제외</pre></details></section><section class="cell"><details class="out"><summary>계산 결과 출력 보기</summary><pre>분석 행정동: 400 | 업종: 63 | 생활인구 자료 동: 424
+서울 일반교습학원 매출 9,173억 원 (분기), 전체 매출 중 3.58%
+</pre></details><details class="code"><summary>코드 보기</summary><pre># 2026년 2분기 동 x 업종 매출 (서울 열린데이터광장 상권분석서비스 추정매출, 행정동)
+sales = pd.read_csv(&quot;data/seoul_sales_dong_2026q2.csv&quot;)
+sales = sales[sales[&quot;THSMON_SELNG_AMT&quot;] &gt; 0]
+A = sales.pivot_table(index=&quot;ADSTRD_CD&quot;, columns=&quot;SVC_INDUTY_CD_NM&quot;, values=&quot;THSMON_SELNG_AMT&quot;, aggfunc=&quot;sum&quot;, fill_value=0)
+A = A[(A &gt; 0).sum(axis=1) &gt;= MIN_IND]          # 업종이 20개 이상인 동만
+
+# 0~19세 생활인구: 2026년 4~6월 평일 평균 (월별 자료를 평일 수로 가중평균, 하루 8개 시간대 평균)
+pop = pd.read_csv(&quot;data/lifepop_age0_19_2026q2.csv&quot;).set_index(&quot;ADSTRD_CD&quot;)
+
+print(&quot;분석 행정동:&quot;, len(A), &quot;| 업종:&quot;, A.shape[1], &quot;| 생활인구 자료 동:&quot;, len(pop))
+print(f&quot;서울 일반교습학원 매출 {A[ACADEMY].sum() / 1e8:,.0f}억 원 (분기), 전체 매출 중 {A[ACADEMY].sum() / A.values.sum():.2%}&quot;)</pre></details></section><section class="md"><h2>3. 지표 정의, 계산식, 해석</h2>
+<p>모든 지표의 <strong>분석 단위는 행정동</strong>이고 <strong>공간 단위도 행정동</strong>이다. 기호는 다음과 같다. 동 $i$, 업종 $j$, 동 $i$의 업종 $j$ 매출 $x_{ij}$, 동 전체 매출 $x_i=\sum_j x_{ij}$, 업종 비중 $p_{ij}=x_{ij}/x_i$, 업종 수 $K=63$이다.</p>
+<h3>지표 1. 학원 입지계수 LQ: 학원은 어디에 몰려 있는가</h3>
+<p>$$LQ_i=\dfrac{x_{i,\text{학원}}/x_i}{x_{\text{학원}}/x}$$</p>
+<ul><li><strong>변수:</strong> $x_{i,\text{학원}}$는 동 $i$의 일반교습학원 매출이고, $x_{\text{학원}}/x$는 서울 전체 매출 중 학원 비중(3.58%)이다.</li><li><strong>분석·공간 단위:</strong> 행정동 400개, 2026년 2분기.</li><li><strong>해석:</strong> 1이면 서울 평균과 같다. <strong>값이 높을수록</strong> 동네 매출에서 학원이 차지하는 비중이 서울 평균보다 큰, 학원에 특화된 동네다(LQ 10이면 서울 평균의 10배). <strong>값이 낮을수록</strong>(1 미만) 학원이 평균보다 적고, 0에 가까우면 학원이 거의 없다.</li><li><strong>"학원 특화 동"(직접 설계):</strong> LQ가 1.5 이상이면서 학원 비중이 서울 평균보다 10%p 이상 높은 동이다. 원래 작은 업종은 조금만 있어도 LQ가 커 보이므로, 비중 차이 조건을 더해 이를 거른다. 기준값은 분석자가 정했다.</li><li><strong>자료와 전처리:</strong> 상권분석서비스 추정매출(2026년 2분기). 업종이 20개 이상인 동만 사용한다.</li></ul>
+<h3>지표 2. 학생 1인당 학원 매출(학원 밀도, Density): 학생 수에 비해 학원 매출은 어디에서 가장 큰가 (직접 설계)</h3>
+<p>$$D_i=\dfrac{x_{i,\text{학원}}}{P_i^{0\text{~}19}}\ \ (\text{만 원/인/분기})$$</p>
+<ul><li><strong>변수:</strong> $x_{i,\text{학원}}$는 동 $i$의 일반교습학원 매출이고, $P_i^{0\text{~}19}$는 동 $i$의 0~19세 생활인구(평일 평균)로, 학생 연령 인구의 대용치다.</li><li><strong>논리:</strong> 학원 매출은 동네가 크거나 상권이 클수록 커지므로 그대로 비교하기 어렵다. 동네의 0~19세 생활인구로 나누어 학생 1인당 학원 매출로 바꾸면, 동네 크기의 영향을 줄여 학생 수에 비한 학원 매출을 비교할 수 있다. 거주인구 대신 <strong>생활인구</strong>를 쓴 이유는, 학원은 외부에서 오는 학생을 상대하므로 그 시간에 동네에 있는 학생을 세는 편이 맞기 때문이다.</li><li><strong>분석·공간 단위:</strong> 행정동 391개(생활인구 500명 이상).</li><li><strong>해석:</strong> <strong>값이 높을수록</strong> 학생 수에 비해 학원 매출이 큰 동네다. 학원이 그 동네 학생뿐 아니라 외부 학생까지 끌어모으는 집중지로 볼 수 있다. <strong>값이 낮을수록</strong> 학생은 많은데 학원은 적은 동네다. 서울 전체는 약 60만 원, 동 중앙값은 22만 원이다.</li><li><strong>자료와 전처리:</strong> 매출(2026년 2분기)과 생활인구(2026년 4~6월 평일 평균).</li></ul>
+<h3>지표 3. 업종 다양성 Gini–Simpson: 학원가는 업종이 단조로운가</h3>
+<p>$$D^{GS}_i=1-\sum_{j=1}^{K}p_{ij}^2,\qquad 0\le D^{GS}\le 1-\tfrac1K$$</p>
+<ul><li><strong>변수:</strong> $p_{ij}$는 동 $i$ 매출 중 업종 $j$의 비중이다. 무작위로 두 번 골랐을 때 서로 다른 업종일 확률로 읽는다.</li><li><strong>분석·공간 단위:</strong> 행정동 400개.</li><li><strong>해석:</strong> <strong>값이 높을수록</strong> 여러 업종이 고르게 섞인 동네이고, <strong>값이 낮을수록</strong> 한두 업종에 쏠린 동네다. 최댓값은 1이 아니라 $1-1/K$(=0.984)이며, 서울 동 중앙값은 0.889다.</li><li><strong>"학원 제외 다양성"(직접 설계):</strong> 같은 식을 일반교습학원을 제외한 62개 업종으로 다시 계산한다. 학원 비중이 큰 동은 정의상 $\sum p^2$이 커져 다양성이 낮아지는 기계적 효과가 있으므로, 학원을 포함한 값만으로는 상권 전체가 단조로운지 판단할 수 없다. 학원을 제외한 값을 함께 비교해 나머지 상권의 다양성을 따로 확인한다.</li><li><strong>자료와 전처리:</strong> 지표 1과 같은 매출 자료를 쓴다. 강건성 확인으로 Entropy(수업 지표)도 함께 계산했으며, 두 지표는 거의 같은 순위를 만든다.</li></ul>
+<h3>보조 변수. 용도지역 비율: 도시 구조와의 연결</h3>
+<p>동마다 시가지 면적 대비 용도지역의 면적 비율을 계산한다. 새 지표가 아니라 위 지표를 해석하기 위한 관련 변수다. 용도지역은 서로 겹치지 않는 세 구분으로 나누며, 나머지는 공업지역(자료상 준공업지역)이다.</p>
+<table><thead><tr><th>구분</th><th>포함하는 용도지역</th><th>법령상 성격</th></tr></thead><tbody><tr><td>전용·제1·2종일반주거</td><td>제1·2종전용주거지역, 제1·2종일반주거지역</td><td>전용주거는 양호한 주거환경을 보호하는 지역(제1종은 단독주택, 제2종은 공동주택 중심). 제1종일반은 저층주택, 제2종일반은 중층주택 중심</td></tr><tr><td>제3종일반주거</td><td>제3종일반주거지역</td><td>중·고층주택 중심</td></tr><tr><td>준주거·상업</td><td>준주거지역, 중심·일반·근린·유통상업지역</td><td>준주거는 주거 기능 위주에 일부 상업·업무 기능을 보완하는 지역, 상업은 상업·업무 기능 중심</td></tr></tbody></table>
+<ul><li><strong>분류의 주의:</strong> 준주거지역은 법령상 주거지역의 한 종류지만, 상업·업무 기능이 섞이므로 상업지역과 묶었다. 이 분류는 분석자가 정했다.</li><li><strong>해석:</strong> 학원 지표와 어떤 용도지역의 상관이 높은지로 학원가가 놓인 토지이용을 읽는다.</li></ul></section><section class="cell"><details class="out"><summary>계산 결과 출력 보기</summary><pre>서울 평균 학원 비중 3.58% | LQ&gt;1인 동 148곳 | LQ≥3인 동 47곳 | 학원 특화 동 29곳
+       academy_share       lq  density   gs_all  gs_noac
+count        400.000  400.000  391.000  400.000  400.000
+mean           0.047    1.305   46.214    0.865    0.862
+std            0.075    2.083   84.552    0.085    0.085
+min            0.000    0.000    0.000    0.166    0.137
+25%            0.005    0.142    7.952    0.856    0.852
+50%            0.019    0.538   21.458    0.889    0.885
+75%            0.056    1.571   47.876    0.908    0.904
+max            0.579   16.151  862.073    0.945    0.943
+</pre></details><details class="code"><summary>코드 보기</summary><pre>def gini_simpson(M):
+    &quot;&quot;&quot;Gini-Simpson 지수 D = 1 - sum(p_k^2): 무작위로 고른 두 결제가 서로 다른 업종일 확률&quot;&quot;&quot;
+    P = M.div(M.sum(axis=1), axis=0)
+    return 1 - (P ** 2).sum(axis=1)
+
+def entropy(M):
+    P = M.div(M.sum(axis=1), axis=0).values
+    return pd.Series(-np.nansum(np.where(P &gt; 0, P * np.log(P), 0), axis=1) / np.log(N_IND), index=M.index)
+
+ind = pd.DataFrame(index=A.index)
+ind[&quot;academy_amt&quot;] = A[ACADEMY]
+ind[&quot;academy_share&quot;] = A[ACADEMY] / A.sum(axis=1)
+seoul_share = A[ACADEMY].sum() / A.values.sum()
+ind[&quot;lq&quot;] = ind[&quot;academy_share&quot;] / seoul_share                               # 지표 1. 입지계수
+ind[&quot;pop_0_19&quot;] = pop[&quot;pop_0_19&quot;].reindex(ind.index)
+ind[&quot;density&quot;] = np.where(ind[&quot;pop_0_19&quot;] &gt;= 500, ind[&quot;academy_amt&quot;] / ind[&quot;pop_0_19&quot;] / 1e4, np.nan)   # 지표 2. 학원 밀도 (만원/인/분기)
+ind[&quot;gs_all&quot;] = gini_simpson(A)                                              # 지표 3. 다양성 (전체 업종)
+ind[&quot;gs_noac&quot;] = gini_simpson(A.drop(columns=ACADEMY))                       #         (학원 제외)
+ind[&quot;ent_all&quot;] = entropy(A)                                                  # 강건성 확인용
+ind[&quot;ent_noac&quot;] = entropy(A.drop(columns=ACADEMY))
+ind[&quot;ac_town&quot;] = (ind[&quot;lq&quot;] &gt;= 1.5) &amp; (ind[&quot;academy_share&quot;] - seoul_share &gt;= 0.10)   # 학원 특화 동
+
+print(f&quot;서울 평균 학원 비중 {seoul_share:.2%} | LQ&gt;1인 동 {int((ind[&#x27;lq&#x27;] &gt; 1).sum())}곳 | LQ≥3인 동 {int((ind[&#x27;lq&#x27;] &gt;= 3).sum())}곳 | 학원 특화 동 {int(ind[&#x27;ac_town&#x27;].sum())}곳&quot;)
+print(ind[[&quot;academy_share&quot;, &quot;lq&quot;, &quot;density&quot;, &quot;gs_all&quot;, &quot;gs_noac&quot;]].describe().round(3).to_string())</pre></details></section><section class="cell"><details class="out"><summary>계산 결과 출력 보기</summary><pre>경계 행정동: 426 | 분석 동(경계와 결합): 398 | 지도에서 회색(제외·자료 없음): 28
+분석 400개 동 중 경계와 맞지 않아 지도에서 빠지는 동: 2개
+</pre></details><details class="code"><summary>코드 보기</summary><pre># 행정동 경계(2025년 1월 기준)와 결합
+gj = gpd.read_file(&quot;../lecture06_Living_Population/data/HangJeongDong_ver20250101.geojson&quot;)
+gj = gj[gj[&quot;sidonm&quot;] == &quot;서울특별시&quot;].copy()
+gj[&quot;ADSTRD_CD&quot;] = gj[&quot;adm_cd2&quot;].str[:8].astype(int)
+gj[&quot;dong_nm&quot;] = gj[&quot;adm_nm&quot;].str.split().str[-1]
+gj = gj.to_crs(epsg=5179)
+gdf = gj.merge(ind, left_on=&quot;ADSTRD_CD&quot;, right_index=True, how=&quot;left&quot;)
+gdf[&quot;valid&quot;] = gdf[&quot;lq&quot;].notna()
+ind2 = ind.join(gj.drop_duplicates(&quot;ADSTRD_CD&quot;).set_index(&quot;ADSTRD_CD&quot;)[[&quot;dong_nm&quot;, &quot;sggnm&quot;]]).dropna(subset=[&quot;dong_nm&quot;])
+print(&quot;경계 행정동:&quot;, len(gj), &quot;| 분석 동(경계와 결합):&quot;, int(gdf[&quot;valid&quot;].sum()), &quot;| 지도에서 회색(제외·자료 없음):&quot;, int((~gdf[&quot;valid&quot;]).sum()))
+print(f&quot;분석 {len(ind)}개 동 중 경계와 맞지 않아 지도에서 빠지는 동: {len(ind) - int(gdf[&#x27;valid&#x27;].sum())}개&quot;)</pre></details></section><section class="md"><h2>4. 결과</h2></section><section class="md"><h3>4-1. 학원은 서울 어디에 몰려 있는가 (LQ)</h3>
+<p>서울 전체 매출에서 일반교습학원은 <strong>3.58%</strong>다. 학원 비중이 서울 평균보다 높은 동(LQ &gt; 1)은 148곳, LQ가 3 이상인 동은 47곳, <strong>학원 특화 동은 29곳</strong>이다.</p>
+<ul><li>LQ가 가장 높은 동은 <strong>목5동 16.2, 중계1동 13.4, 대치1동 11.6, 돈암1동 11.5, 반포2동 10.9, 신정7동 10.7, 명일2동 9.7, 방이1동 9.3</strong>이다.</li><li>특화 동이 가장 많은 자치구는 송파(5곳), 양천(4곳), 서초(3곳), 강남(3곳), 성북(2곳), 노원(2곳)이다.</li><li>지도에서 거점이 구분된다. <strong>강남·서초</strong>(대치, 반포), <strong>양천</strong>(목동, 신정), <strong>송파·강동</strong>(방이, 명일), <strong>노원</strong>(중계), <strong>성북</strong>(돈암)이다. LQ가 높은 동은 한 지역에 연속되지 않고 여러 곳으로 분산되어 있다.</li></ul></section><section class="cell"><details class="out"><summary>계산 결과 출력 보기</summary><pre>LQ 상위 8: 목5동 16.2, 중계1동 13.4, 대치1동 11.6, 돈암1동 11.5, 반포2동 10.9, 신정7동 10.7, 명일2동 9.7, 방이1동 9.3
+</pre></details><figure><img src="img/fig1.png" alt="그림 1"></figure><details class="code"><summary>코드 보기</summary><pre># 그림 1 (공간) 학원 입지계수(LQ): 학원은 어디에 몰려 있는가
+bins = [0, 1, 1.5, 3, np.inf]
+labels = [&quot;&lt; 1 (서울 평균 이하)&quot;, &quot;1 ~ 1.5&quot;, &quot;1.5 ~ 3&quot;, &quot;≥ 3 (강한 집중)&quot;]
+colors = [&quot;#f1f1f1&quot;, &quot;#fde0c5&quot;, &quot;#f59e6c&quot;, &quot;#b2182b&quot;]
+g = gdf.copy()
+g[&quot;cls&quot;] = pd.cut(g[&quot;lq&quot;], bins=bins, labels=False, right=False)
+fig, ax = plt.subplots(figsize=(11, 10))
+g[~g[&quot;valid&quot;]].plot(ax=ax, color=&quot;#cfcfcf&quot;, edgecolor=&quot;white&quot;, linewidth=0.3)
+for k, c in enumerate(colors):
+    g[g[&quot;cls&quot;] == k].plot(ax=ax, color=c, edgecolor=&quot;white&quot;, linewidth=0.3)
+g[g[&quot;ac_town&quot;] == True].boundary.plot(ax=ax, color=&quot;#4a0d14&quot;, linewidth=1.3)
+halo = [pe.withStroke(linewidth=3, foreground=&quot;white&quot;)]
+top_lq = g[g[&quot;ac_town&quot;] == True].sort_values(&quot;lq&quot;, ascending=False).head(6)
+offs = [(-6000, 4500), (3000, 6500), (-5500, 7000), (-5000, 6500), (5500, -6500), (-7000, -5500)]
+for (_, r), (dx, dy) in zip(top_lq.iterrows(), offs):
+    x, y = r.geometry.centroid.x, r.geometry.centroid.y
+    ax.annotate(r[&quot;dong_nm&quot;], (x, y), (x + dx, y + dy), fontsize=10.5, fontweight=&quot;bold&quot;, path_effects=halo,
+                arrowprops=dict(arrowstyle=&quot;-&quot;, color=&quot;#444&quot;, lw=0.8))
+ax.legend(handles=[Patch(facecolor=c, edgecolor=&quot;#999&quot;, label=l) for c, l in zip(colors, labels)]
+          + [Patch(facecolor=&quot;none&quot;, edgecolor=&quot;#4a0d14&quot;, linewidth=1.3, label=f&quot;학원 특화 동 ({int(ind[&#x27;ac_town&#x27;].sum())}개)&quot;),
+             Patch(facecolor=&quot;#cfcfcf&quot;, label=&quot;제외 (업종 20개 미만 등)&quot;)],
+          title=&quot;일반교습학원 입지계수 (LQ)&quot;, loc=&quot;upper left&quot;, fontsize=10, title_fontsize=11)
+ax.set_title(&quot;① 학원은 서울 어디에 몰려 있는가 (행정동 학원 입지계수, 2026년 2분기)&quot;, fontsize=15)
+ax.set_axis_off()
+plt.subplots_adjust(0.02, 0.02, 0.98, 0.95)
+plt.savefig(&quot;image/academy3_fig1_lq_map.png&quot;, dpi=150)
+plt.show()
+print(&quot;LQ 상위 8:&quot;, &quot;, &quot;.join(f&quot;{r.dong_nm} {r.lq:.1f}&quot; for r in ind2.sort_values(&quot;lq&quot;, ascending=False).head(8).itertuples()))</pre></details></section><section class="md"><h3>4-2. 학생 1인당 학원 매출은 어디에서 가장 큰가 (학원 밀도)</h3>
+<ul><li>서울 전체로는 학생(0~19세) 1인당 학원 매출이 분기 기준 약 60만 원이고, 동 중앙값은 22만 원이다.</li><li>밀도가 가장 높은 동은 <strong>노량진2동 862만 원, 대치4동 588만 원, 명일2동 588만 원, 대치2동 477만 원, 대치1동 383만 원, 반포3동 338만 원, 방이1동 328만 원, 신정7동 324만 원</strong>이다. 대치4동은 서울 중앙값의 약 27배다.</li><li>학원 특화 동 29곳은 모두 학생 1인당 학원 매출이 서울 동 중앙값 이상이고, 15곳은 150만 원 이상이다. 밀도 상위 10개 동 중 8곳이 학원 특화 동이며, 나머지 두 곳은 노량진2동과 압구정동이다. 지도에서는 강남·서초·송파를 잇는 띠와 양천, 노원, 성북에 모여 있다.</li><li><strong>노량진2동은 예외로 읽어야 한다.</strong> 동 전체 매출에서 학원 비중은 2%(LQ 0.5)뿐인데 학생 인구가 1,300명 남짓이라 밀도가 가장 크게 나온다. 노량진은 성인 대상 시험 준비 학원가여서 청소년 학원과는 성격이 다를 수 있다. 이 업종 분류에 성인 학원이 섞여 있는지는 확인하지 못했다.</li></ul></section><section class="cell"><details class="out"><summary>계산 결과 출력 보기</summary><pre>학원 밀도: 서울 전체 60만 원/인, 동 중앙값 22만 원
+밀도 상위 8: 노량진2동 862, 대치4동 588, 명일2동 588, 대치2동 477, 대치1동 383, 반포3동 338, 방이1동 328, 신정7동 324
+</pre></details><figure><img src="img/fig2.png" alt="그림 2"></figure><details class="code"><summary>코드 보기</summary><pre># 그림 2 (공간) 학원 밀도: 학생 1인당 학원 매출
+bins = [0, 10, 22, 50, 150, np.inf]
+labels = [&quot;&lt; 10만 원&quot;, &quot;10 ~ 22 (서울 중앙값 이하)&quot;, &quot;22 ~ 50&quot;, &quot;50 ~ 150&quot;, &quot;≥ 150만 원 (강한 집중)&quot;]
+colors = [&quot;#f1f1f1&quot;, &quot;#fde0c5&quot;, &quot;#fdae6b&quot;, &quot;#e6550d&quot;, &quot;#7f2704&quot;]
+med = ind2[&quot;density&quot;].median()
+g = gdf.copy()
+g[&quot;cls&quot;] = pd.cut(g[&quot;density&quot;], bins=bins, labels=False, right=False)
+fig, ax = plt.subplots(figsize=(11, 10))
+g[g[&quot;density&quot;].isna()].plot(ax=ax, color=&quot;#cfcfcf&quot;, edgecolor=&quot;white&quot;, linewidth=0.3)
+for k, c in enumerate(colors):
+    g[g[&quot;cls&quot;] == k].plot(ax=ax, color=c, edgecolor=&quot;white&quot;, linewidth=0.3)
+g[g[&quot;ac_town&quot;] == True].boundary.plot(ax=ax, color=&quot;#4a0d14&quot;, linewidth=1.1)
+top = g.sort_values(&quot;density&quot;, ascending=False).head(4)
+offs = [(-9000, -6000), (-3500, -9500), (-8500, 8500), (-1500, 10500)]
+for (_, r), (dx, dy) in zip(top.iterrows(), offs):
+    x, y = r.geometry.centroid.x, r.geometry.centroid.y
+    ax.annotate(f&quot;{r[&#x27;dong_nm&#x27;]} {r[&#x27;density&#x27;]:.0f}만&quot;, (x, y), (x + dx, y + dy), fontsize=10.5, fontweight=&quot;bold&quot;, path_effects=halo,
+                arrowprops=dict(arrowstyle=&quot;-&quot;, color=&quot;#444&quot;, lw=0.8))
+ax.legend(handles=[Patch(facecolor=c, edgecolor=&quot;#999&quot;, label=l) for c, l in zip(colors, labels)]
+          + [Patch(facecolor=&quot;none&quot;, edgecolor=&quot;#4a0d14&quot;, linewidth=1.1, label=&quot;학원 특화 동 (윤곽선)&quot;), Patch(facecolor=&quot;#cfcfcf&quot;, label=&quot;제외·자료 없음&quot;)],
+          title=&quot;학생(0~19세) 1인당 학원 매출 (분기)&quot;, loc=&quot;upper left&quot;, fontsize=10, title_fontsize=11)
+ax.set_title(&quot;② 학생 1인당 학원 매출은 어디에서 가장 큰가 (학원 밀도, 2026년 2분기)&quot;, fontsize=15)
+ax.set_axis_off()
+plt.subplots_adjust(0.02, 0.02, 0.98, 0.95)
+plt.savefig(&quot;image/academy3_fig2_density_map.png&quot;, dpi=150)
+plt.show()
+print(f&quot;학원 밀도: 서울 전체 {ind2[&#x27;academy_amt&#x27;].sum() / ind2[&#x27;pop_0_19&#x27;].sum() / 1e4:.0f}만 원/인, 동 중앙값 {med:.0f}만 원&quot;)
+print(&quot;밀도 상위 8:&quot;, &quot;, &quot;.join(f&quot;{r.dong_nm} {r.density:.0f}&quot; for r in ind2.sort_values(&quot;density&quot;, ascending=False).head(8).itertuples()))</pre></details></section><section class="cell"><details class="out"><summary>계산 결과 출력 보기</summary><pre>LQ와 밀도의 상관계수(순위 기준) = +0.83
+학원 특화 동의 밀도 중앙값 157만 vs 그 외 19만
+LQ 상위 5동의 밀도(만원): 목5동 LQ 16.2 / 301, 중계1동 LQ 13.4 / 63, 대치1동 LQ 11.6 / 383, 돈암1동 LQ 11.5 / 167, 반포2동 LQ 10.9 / 143
+밀도 상위 5동의 LQ: 노량진2동 862만 / LQ 0.5, 대치4동 588만 / LQ 9.1, 명일2동 588만 / LQ 9.7, 대치2동 477만 / LQ 8.2, 대치1동 383만 / LQ 11.6
+</pre></details><figure><img src="img/fig3.png" alt="그림 3"></figure><details class="code"><summary>코드 보기</summary><pre># 그림 6 (비공간) 두 지표 나란히: 학원 비중(LQ) vs 학원 밀도
+dd = ind2.dropna(subset=[&quot;density&quot;])
+fig, ax = plt.subplots(figsize=(11, 8))
+ax.scatter(dd.loc[~dd[&quot;ac_town&quot;], &quot;lq&quot;], dd.loc[~dd[&quot;ac_town&quot;], &quot;density&quot;], s=22, color=&quot;#9ecae1&quot;, alpha=0.8, label=&quot;그 외 동&quot;)
+ax.scatter(dd.loc[dd[&quot;ac_town&quot;], &quot;lq&quot;], dd.loc[dd[&quot;ac_town&quot;], &quot;density&quot;], s=45, color=&quot;#b2182b&quot;, edgecolor=&quot;white&quot;, linewidth=0.5, label=&quot;학원 특화 동&quot;)
+ax.set_xscale(&quot;symlog&quot;, linthresh=1); ax.set_yscale(&quot;log&quot;)
+ax.axvline(1, color=&quot;gray&quot;, ls=&quot;--&quot;, lw=1); ax.axhline(dd[&quot;density&quot;].median(), color=&quot;gray&quot;, ls=&quot;--&quot;, lw=1)
+ax.set_xlabel(&quot;학원 입지계수 LQ (동 매출 속 비중, 1 = 서울 평균)&quot;); ax.set_ylabel(&quot;학원 밀도 (학생 1인당 학원 매출, 만 원/분기, 로그)&quot;)
+lab = pd.concat([dd.nlargest(6, &quot;density&quot;), dd.nlargest(6, &quot;lq&quot;)]).drop_duplicates()
+OFF = {&quot;노량진2동&quot;: (8, 4, &quot;left&quot;), &quot;대치4동&quot;: (-8, 8, &quot;right&quot;), &quot;명일2동&quot;: (8, 8, &quot;left&quot;), &quot;대치2동&quot;: (-8, 4, &quot;right&quot;), &quot;대치1동&quot;: (8, 4, &quot;left&quot;),
+       &quot;반포3동&quot;: (-8, 6, &quot;right&quot;), &quot;목5동&quot;: (8, 6, &quot;left&quot;), &quot;중계1동&quot;: (8, -12, &quot;left&quot;), &quot;돈암1동&quot;: (8, 6, &quot;left&quot;), &quot;반포2동&quot;: (8, -14, &quot;left&quot;),
+       &quot;신정7동&quot;: (8, -10, &quot;left&quot;), &quot;방이1동&quot;: (-8, -12, &quot;right&quot;)}
+for r in lab.itertuples():
+    dx, dy, ha = OFF.get(r.dong_nm, (6, 4, &quot;left&quot;))
+    ax.annotate(r.dong_nm, (r.lq, r.density), (dx, dy), textcoords=&quot;offset points&quot;, ha=ha, fontsize=10, fontweight=&quot;bold&quot;, path_effects=halo)
+ax.set_title(&quot;③ 학원 &#x27;비중&#x27;(LQ)과 &#x27;학생 1인당 학원 매출&#x27;은 같은 동네를 가리키는가&quot;, fontsize=14)
+ax.grid(alpha=0.25); ax.legend(loc=&quot;lower right&quot;)
+plt.tight_layout()
+plt.savefig(&quot;image/academy3_fig3_lq_density.png&quot;, dpi=150)
+plt.show()
+print(f&quot;LQ와 밀도의 상관계수(순위 기준) = {spearmanr(dd[&#x27;lq&#x27;], dd[&#x27;density&#x27;])[0]:+.2f}&quot;)
+print(&quot;학원 특화 동의 밀도 중앙값 %.0f만 vs 그 외 %.0f만&quot; % (dd[dd.ac_town].density.median(), dd[~dd.ac_town].density.median()))
+print(&quot;LQ 상위 5동의 밀도(만원):&quot;, &quot;, &quot;.join(f&quot;{r.dong_nm} LQ {r.lq:.1f} / {r.density:.0f}&quot; for r in dd.nlargest(5, &quot;lq&quot;).itertuples()))
+print(&quot;밀도 상위 5동의 LQ:&quot;, &quot;, &quot;.join(f&quot;{r.dong_nm} {r.density:.0f}만 / LQ {r.lq:.1f}&quot; for r in dd.nlargest(5, &quot;density&quot;).itertuples()))</pre></details></section><section class="md"><p><strong>LQ와 밀도는 같은 동네를 가리키는가.</strong> 두 지표의 상관계수는 <strong>+0.83</strong>으로 매우 높다. 학원 특화 동의 밀도 중앙값은 157만 원으로 그 외 동 19만 원의 약 8배다. 학원 비중이 큰 동네는 학생 수에 비해서도 학원 매출이 크다.</p>
+<p>다만 두 지표가 갈리는 동이 있어서 서로 다른 정보를 준다.</p>
+<ul><li><strong>LQ는 높은데 밀도는 낮은 동:</strong> 중계1동(LQ 13.4, 밀도 63만 원). 학원이 동네 매출의 48%이지만 학생이 많아서(0~19세 생활인구 약 8,300명) 학생 1인당 값은 평범하다. 동네 학생들이 다니는 학원가에 가깝다.</li><li><strong>밀도는 높은데 LQ는 낮은 동:</strong> 노량진2동(밀도 862만 원, LQ 0.5). 학원이 매출의 2%뿐이어서 상권 구성은 학원가가 아니다.</li></ul></section><section class="md"><h3>4-3. 학원가는 업종이 단조로운가: 공간 패턴</h3>
+<p>두 지도는 색 구간을 같게 맞췄다. 왼쪽은 63개 업종 전체, 오른쪽은 일반교습학원을 제외한 업종으로 계산한 Gini–Simpson 지수이고, 검은 윤곽선이 학원 특화 동이다.</p>
+<ul><li>학원 특화 동이 진한 칸(단조로움)에 몰려 있지 않고 진한 칸과 옅은 칸에 섞여 있다. 학원 특화 동이 곧 단조로운 동이라는 공간 패턴은 뚜렷하지 않다.</li><li>서울에서 업종이 가장 단조로운 동은 학원가가 아니라 노량진2동(0.17), 제기동(0.34), 노량진1동(0.41), 잠실6동(0.45), 독산1동(0.48)이다. 한 업종이 상권 대부분을 차지하는 시장·전문상가 일대다.</li></ul></section><section class="cell"><figure><img src="img/fig4.png" alt="그림 4"></figure><details class="code"><summary>코드 보기</summary><pre># 그림 3 (공간) 업종 다양성(Gini–Simpson): 전체 업종 vs 학원 제외 (같은 색 구간)
+vals = pd.concat([gdf[&quot;gs_all&quot;], gdf[&quot;gs_noac&quot;]]).dropna()
+edges = np.quantile(vals, [0, .2, .4, .6, .8, 1.0]); edges[0], edges[-1] = 0, 1
+cmap = [&quot;#7f2704&quot;, &quot;#d94801&quot;, &quot;#fd8d3c&quot;, &quot;#fdd0a2&quot;, &quot;#fff1e0&quot;]
+cls_labels = [f&quot;{edges[i]:.2f} ~ {edges[i + 1]:.2f}&quot; for i in range(5)]
+fig, axes = plt.subplots(1, 2, figsize=(18, 9))
+for ax, col, title in [(axes[0], &quot;gs_all&quot;, &quot;전체 업종 기준&quot;), (axes[1], &quot;gs_noac&quot;, &quot;일반교습학원을 제외한 기준&quot;)]:
+    g = gdf.copy()
+    g[&quot;cls&quot;] = pd.cut(g[col], bins=edges, labels=False, include_lowest=True)
+    g[~g[&quot;valid&quot;]].plot(ax=ax, color=&quot;#cfcfcf&quot;, edgecolor=&quot;white&quot;, linewidth=0.3)
+    for k, c in enumerate(cmap):
+        g[g[&quot;cls&quot;] == k].plot(ax=ax, color=c, edgecolor=&quot;white&quot;, linewidth=0.3)
+    g[g[&quot;ac_town&quot;] == True].boundary.plot(ax=ax, color=&quot;black&quot;, linewidth=1.1)
+    ax.set_title(f&quot;업종 다양성 (Gini–Simpson) — {title}&quot;, fontsize=14); ax.set_axis_off()
+fig.legend(handles=[Patch(facecolor=c, edgecolor=&quot;#999&quot;, label=l) for c, l in zip(cmap, cls_labels)]
+           + [Patch(facecolor=&quot;none&quot;, edgecolor=&quot;black&quot;, linewidth=1.1, label=&quot;학원 특화 동 (윤곽선)&quot;), Patch(facecolor=&quot;#cfcfcf&quot;, label=&quot;제외&quot;)],
+           title=&quot;Gini–Simpson (진할수록 단조로움)&quot;, loc=&quot;lower center&quot;, ncol=7, fontsize=11, title_fontsize=12, frameon=False)
+fig.suptitle(&quot;④ 학원 특화 동은 업종이 단조로운가? 학원을 제외하고 보면?&quot;, fontsize=16)
+plt.tight_layout(rect=(0, 0.08, 1, 1))
+plt.savefig(&quot;image/academy3_fig4_gs_maps.png&quot;, dpi=150)
+plt.show()</pre></details></section><section class="md"><h3>4-4. 학원 비중과 업종 다양성의 관계</h3>
+<table><thead><tr><th>비교 (중앙값)</th><th>학원 특화 동 29곳</th><th>그 외 동</th></tr></thead><tbody><tr><td>Gini–Simpson, 전체 업종</td><td>0.871</td><td>0.890</td></tr><tr><td>Gini–Simpson, 학원 제외</td><td>0.896</td><td>0.885</td></tr><tr><td>Entropy, 전체 업종 (강건성)</td><td>0.620</td><td>0.651</td></tr><tr><td>Entropy, 학원 제외 (강건성)</td><td>0.648</td><td>0.638</td></tr></tbody></table>
+<ul><li>전체 업종으로 보면 학원 특화 동의 다양성은 <strong>다소 낮다.</strong> Gini–Simpson 중앙값은 0.871 대 0.890, Entropy는 0.620 대 0.651이며, 특화 29곳 중 16곳이 서울 중앙값(0.889)보다 낮다. 학원이 동네 매출의 14~58%를 차지하므로 한 업종이 커지는 만큼 쏠려 보이는 것이다.</li><li><strong>학원을 제외하면 차이가 거의 없다.</strong> 두 지표 모두 중앙값 차이가 0.01 정도이고(0.896 대 0.885, 0.648 대 0.638), 특화 동의 학원 제외 다양성은 오히려 약간 높다. 학원 외 상권은 서울 평균만큼 다양하다.</li><li>학원 비중과 다양성의 상관계수는 +0.24(학원 제외 +0.23)로 약한 <strong>양</strong>의 관계다. 학원이 거의 없는 동 중에 시장·전문상가 같은 단조로운 동이 많기 때문이다.</li><li>학원가 안에서도 갈린다. <strong>목5동</strong>(학원 58%)은 전체 업종 0.650이지만 학원을 제외하면 0.916으로 서울 평균 이상이고, 중계1동도 0.745에서 0.914로 올라간다. <strong>돈암1동</strong>은 학원을 제외해도 0.650으로 낮아서, 학원 외 상권도 약한 동네다.</li></ul></section><section class="cell"><details class="out"><summary>계산 결과 출력 보기</summary><pre>전체 업종: 학원 특화 동 중앙값 0.871 vs 그 외 0.890
+학원 제외: 학원 특화 동 중앙값 0.896 vs 그 외 0.885
+엔트로피(전체): 학원 특화 동 중앙값 0.620 vs 그 외 0.651
+엔트로피(학원 제외): 학원 특화 동 중앙값 0.648 vs 그 외 0.638
+학원 특화 동 29곳 중 지니심슨(전체)이 서울 중앙값보다 낮은 동: 16곳
+</pre></details><figure><img src="img/fig5.png" alt="그림 5"></figure><details class="code"><summary>코드 보기</summary><pre># 그림 4 (비공간) 학원 비중과 업종 다양성의 관계
+fig, axes = plt.subplots(1, 2, figsize=(17, 7), sharex=True)
+sel = ind2[&quot;ac_town&quot;]
+for ax, col, title in [(axes[0], &quot;gs_all&quot;, &quot;전체 업종 기준&quot;), (axes[1], &quot;gs_noac&quot;, &quot;일반교습학원 제외 기준&quot;)]:
+    ax.scatter(ind2.loc[~sel, &quot;academy_share&quot;] * 100, ind2.loc[~sel, col], s=22, color=&quot;#9ecae1&quot;, alpha=0.8, label=&quot;그 외 동&quot;)
+    ax.scatter(ind2.loc[sel, &quot;academy_share&quot;] * 100, ind2.loc[sel, col], s=40, color=&quot;#b2182b&quot;, edgecolor=&quot;white&quot;, linewidth=0.5, label=&quot;학원 특화 동&quot;)
+    q = pd.qcut(ind2[&quot;academy_share&quot;], 10, duplicates=&quot;drop&quot;)
+    mid = ind2.groupby(q, observed=True).agg(x=(&quot;academy_share&quot;, &quot;median&quot;), y=(col, &quot;median&quot;))
+    ax.plot(mid[&quot;x&quot;] * 100, mid[&quot;y&quot;], color=&quot;black&quot;, lw=2.2, marker=&quot;o&quot;, label=&quot;학원 비중 10분위 중앙값&quot;)
+    rho = spearmanr(ind2[&quot;academy_share&quot;], ind2[col])[0]
+    ax.set_title(f&quot;{title}  (상관계수 = {rho:+.2f})&quot;, fontsize=13)
+    ax.set_xlabel(&quot;동 매출 중 일반교습학원 비중 (%)&quot;); ax.set_ylabel(&quot;업종 다양성 (Gini–Simpson)&quot;)
+    ax.axhline(ind2[col].median(), color=&quot;gray&quot;, ls=&quot;--&quot;, lw=1); ax.grid(alpha=0.25)
+    for r in ind2[ind2[&quot;ac_town&quot;]].sort_values(&quot;lq&quot;, ascending=False).head(4).itertuples():
+        ax.annotate(r.dong_nm, (r.academy_share * 100, getattr(r, col)), (6, 6), textcoords=&quot;offset points&quot;, fontsize=10, fontweight=&quot;bold&quot;)
+axes[0].legend(loc=&quot;lower left&quot;)
+fig.suptitle(&quot;⑤ 학원 비중이 클수록 다양성이 낮은가? (점선 = 서울 중앙값)&quot;, fontsize=15)
+plt.tight_layout()
+plt.savefig(&quot;image/academy3_fig5_scatter.png&quot;, dpi=150)
+plt.show()
+town, rest = ind2[ind2[&quot;ac_town&quot;]], ind2[~ind2[&quot;ac_town&quot;]]
+for lab, col in [(&quot;전체 업종&quot;, &quot;gs_all&quot;), (&quot;학원 제외&quot;, &quot;gs_noac&quot;), (&quot;엔트로피(전체)&quot;, &quot;ent_all&quot;), (&quot;엔트로피(학원 제외)&quot;, &quot;ent_noac&quot;)]:
+    print(f&quot;{lab}: 학원 특화 동 중앙값 {town[col].median():.3f} vs 그 외 {rest[col].median():.3f}&quot;)
+print(f&quot;학원 특화 동 {len(town)}곳 중 지니심슨(전체)이 서울 중앙값보다 낮은 동: {int((town[&#x27;gs_all&#x27;] &lt; ind2[&#x27;gs_all&#x27;].median()).sum())}곳&quot;)</pre></details></section><section class="md"><h3>4-5. 학원가는 어떤 토지이용 위에 있는가 (용도지역)</h3>
+<table><thead><tr><th>용도지역 비율 (시가지 대비, 중앙값)</th><th>학원 특화 동</th><th>그 외 동</th><th>LQ와의 상관계수</th><th>학원 밀도와의 상관계수</th></tr></thead><tbody><tr><td>전용·제1·2종일반주거</td><td>42%</td><td>62%</td><td>−0.07</td><td>−0.16</td></tr><tr><td><strong>제3종일반주거</strong></td><td><strong>51%</strong></td><td><strong>23%</strong></td><td><strong>+0.39</strong></td><td><strong>+0.34</strong></td></tr><tr><td>준주거·상업</td><td>3%</td><td>6%</td><td>−0.22</td><td>−0.04</td></tr></tbody></table>
+<ul><li><strong>학원 특화 동은 제3종일반주거의 비율이 2배 이상 높다</strong>(51% 대 23%). LQ와의 상관도 제3종일반주거에서만 뚜렷하고(+0.39), 학원 밀도도 같은 방향이다(+0.34).</li><li>같은 주거지라도 <strong>전용·제1·2종일반주거는 오히려 학원 특화 동에서 낮고</strong>(42% 대 62%) 상관도 없거나 약하다(−0.07, −0.16). 준주거·상업은 3% 대 6%로 학원 특화 동에서 낮다(상관계수 −0.22).</li><li>동을 유형으로 나누면, 전용·일반주거 합계가 70% 이상인 338개 동 중 학원 특화 동이 28곳이고, 준주거·상업이 40% 이상인 19개 동에는 <strong>한 곳도 없다.</strong></li><li>LQ 상위 6개 동의 제3종일반주거 비율은 중계1동 76%, 대치1동 72%, 반포2동 72%, 돈암1동 65%, 목5동 62%, 신정7동 52%다(위 출력). 이 6곳은 준주거·상업 비율이 0~10%다.</li><li>단, <strong>제3종일반주거가 많다고 학원가가 되지는 않는다.</strong> 전용·일반주거 합계가 70% 이상인 338개 동 중 학원 특화 동은 28곳(약 8%)뿐이다. 또 세 구분의 비율은 합이 100%에 가까워(공업지역 제외) 한 구분이 커지면 다른 구분이 작아진다(전용·일반주거 합계와 준주거·상업 비율의 상관계수 −0.83). 그래서 상관이 가장 뚜렷한 제3종일반주거를 중심으로 해석하는 것이 안전하다.</li><li>업종 다양성은 어느 용도지역과도 거의 무관하다(상관계수 −0.00~+0.11). 토지이용으로 설명되는 것은 학원의 집중이고, 다양성은 아니다.</li></ul></section><section class="cell"><details class="out"><summary>계산 결과 출력 보기</summary><pre>용도지역과 결합된 동 398 | 시가지(전용·일반주거+준주거+상업+공업) 면적 대비 비율
+서울 동 중앙값(%): {&#x27;전용·제1·2종일반주거&#x27;: 60, &#x27;제3종일반주거&#x27;: 24, &#x27;준주거·상업&#x27;: 5}
+
+[학원 특화 동 vs 그 외] 중앙값(%)
+  전용·제1·2종일반주거: 42 vs 62
+  제3종일반주거: 51 vs 23
+  준주거·상업: 3 vs 6
+
+[상관계수(순위 기준)]        LQ    학원 밀도   지니심슨(전체)  지니심슨(학원 제외)
+  전용·제1·2종일반주거 -0.07   -0.16      +0.08          +0.04
+  제3종일반주거    +0.39   +0.34      +0.08          +0.11
+  준주거·상업     -0.22   -0.04      -0.00          +0.02
+
+[유형별] 동 수 / 학원 특화 동 수 / LQ 중앙값
+                   동  학원특화동  LQ중앙값
+type                              
+전용·일반주거 합계 70%↑  338     28   0.60
+준주거·상업 40%↑       19      0   0.00
+혼합                41      1   0.22
+전용·일반주거 합계와 준주거·상업 비율의 상관(서로 반대로 움직이는 정도): -0.83
+학원 LQ 상위 6동의 전용·제1·2종 / 제3종 / 준주거·상업 (%): 목5동 23/62/10, 중계1동 14/76/10, 대치1동 28/72/1, 돈암1동 33/65/2, 반포2동 28/72/0, 신정7동 39/52/6
+학원 특화 동의 전용·일반주거 합계 최소 68%, 중앙값 97%
+학원 특화 동의 공업지역 비율 중앙값 0%, 그 외 동 0%
+지정 면적(㎢): 전용·제1·2종일반주거 214, 제3종일반주거 101, 준주거·상업 41, 공업 20
+</pre></details><details class="code"><summary>코드 보기</summary><pre># 보조 변수: 용도지역 비율 (도시 구조·토지이용과의 연결용)
+z = gpd.read_file(glob.glob(&quot;shp/569_UQ111_용도지역(도시지역)_202609/*.shp&quot;)[0], encoding=&quot;cp949&quot;).to_crs(5179)
+z = z[z[&quot;ATRB_SE&quot;].notna()].copy(); z[&quot;geometry&quot;] = z.geometry.make_valid()
+def zone_cls(c):
+    if c.startswith(&quot;UQA11&quot;) or c in (&quot;UQA121&quot;, &quot;UQA122&quot;, &quot;UQA124&quot;, &quot;UQA129&quot;): return &quot;전용·제1·2종일반주거&quot;
+    if c == &quot;UQA123&quot;: return &quot;제3종일반주거&quot;
+    if c in (&quot;UQA130&quot;, &quot;UQA190&quot;) or c.startswith(&quot;UQA2&quot;): return &quot;준주거·상업&quot;
+    if c.startswith(&quot;UQA3&quot;): return &quot;공업&quot;
+    return None
+z[&quot;cls&quot;] = z[&quot;ATRB_SE&quot;].map(zone_cls); z = z[z[&quot;cls&quot;].notna()]
+zd = z.dissolve(by=&quot;cls&quot;).reset_index()[[&quot;cls&quot;, &quot;geometry&quot;]]
+ov = gpd.overlay(gj[[&quot;ADSTRD_CD&quot;, &quot;geometry&quot;]], zd, how=&quot;intersection&quot;, keep_geom_type=True)
+ov[&quot;area&quot;] = ov.geometry.area
+ar = ov.pivot_table(index=&quot;ADSTRD_CD&quot;, columns=&quot;cls&quot;, values=&quot;area&quot;, aggfunc=&quot;sum&quot;, fill_value=0)
+K = [&quot;전용·제1·2종일반주거&quot;, &quot;제3종일반주거&quot;, &quot;준주거·상업&quot;, &quot;공업&quot;]
+for c in K:
+    if c not in ar.columns: ar[c] = 0
+urban = ar[K].sum(axis=1)
+Z = (ar[K[:3]].div(urban, axis=0))[urban &gt; 0]   # 서로 겹치지 않는 3개 구분 (나머지는 공업지역)
+d = ind2.join(Z, how=&quot;inner&quot;)
+print(f&quot;용도지역과 결합된 동 {len(d)} | 시가지(전용·일반주거+준주거+상업+공업) 면적 대비 비율&quot;)
+print(&quot;서울 동 중앙값(%):&quot;, {c: round(d[c].median() * 100) for c in Z.columns})
+print(&quot;\n[학원 특화 동 vs 그 외] 중앙값(%)&quot;)
+for c in Z.columns:
+    t, r = d[d[&quot;ac_town&quot;]][c], d[~d[&quot;ac_town&quot;]][c]
+    print(f&quot;  {c}: {t.median() * 100:.0f} vs {r.median() * 100:.0f}&quot;)
+print(&quot;\n[상관계수(순위 기준)]        LQ    학원 밀도   지니심슨(전체)  지니심슨(학원 제외)&quot;)
+for c in Z.columns:
+    print(f&quot;  {c:&lt;10} {spearmanr(d.lq, d[c])[0]:+.2f}   {spearmanr(d.dropna(subset=[&#x27;density&#x27;]).density, d.dropna(subset=[&#x27;density&#x27;])[c])[0]:+.2f}      {spearmanr(d.gs_all, d[c])[0]:+.2f}          {spearmanr(d.gs_noac, d[c])[0]:+.2f}&quot;)
+d[&quot;주거합계&quot;] = d[&quot;전용·제1·2종일반주거&quot;] + d[&quot;제3종일반주거&quot;]
+d[&quot;type&quot;] = np.where(d[&quot;주거합계&quot;] &gt;= 0.7, &quot;전용·일반주거 합계 70%↑&quot;, np.where(d[&quot;준주거·상업&quot;] &gt;= 0.4, &quot;준주거·상업 40%↑&quot;, &quot;혼합&quot;))
+print(&quot;\n[유형별] 동 수 / 학원 특화 동 수 / LQ 중앙값&quot;)
+print(d.groupby(&quot;type&quot;).agg(동=(&quot;lq&quot;, &quot;size&quot;), 학원특화동=(&quot;ac_town&quot;, &quot;sum&quot;), LQ중앙값=(&quot;lq&quot;, &quot;median&quot;)).round(2).to_string())
+print(&quot;전용·일반주거 합계와 준주거·상업 비율의 상관(서로 반대로 움직이는 정도):&quot;, round(spearmanr(d[&quot;주거합계&quot;], d[&quot;준주거·상업&quot;])[0], 2))
+print(&quot;학원 LQ 상위 6동의 전용·제1·2종 / 제3종 / 준주거·상업 (%):&quot;, &quot;, &quot;.join(f&quot;{r.dong_nm} {r[&#x27;전용·제1·2종일반주거&#x27;] * 100:.0f}/{r[&#x27;제3종일반주거&#x27;] * 100:.0f}/{r[&#x27;준주거·상업&#x27;] * 100:.0f}&quot; for _, r in d.sort_values(&quot;lq&quot;, ascending=False).head(6).iterrows()))
+print(&quot;학원 특화 동의 전용·일반주거 합계 최소 %.0f%%, 중앙값 %.0f%%&quot; % (d[d[&quot;ac_town&quot;]][&quot;주거합계&quot;].min() * 100, d[d[&quot;ac_town&quot;]][&quot;주거합계&quot;].median() * 100))
+print(&quot;학원 특화 동의 공업지역 비율 중앙값 %.0f%%, 그 외 동 %.0f%%&quot; % ((1 - d[d[&quot;ac_town&quot;]][list(Z.columns)].sum(axis=1)).median() * 100, (1 - d[~d[&quot;ac_town&quot;]][list(Z.columns)].sum(axis=1)).median() * 100))
+print(&quot;지정 면적(㎢): &quot; + &quot;, &quot;.join(f&quot;{k} {ar[k].sum() / 1e6:.0f}&quot; for k in K))</pre></details></section><section class="cell"><figure><img src="img/fig6.png" alt="그림 6"></figure><details class="code"><summary>코드 보기</summary><pre># 그림 5 (비공간) 학원 특화 동은 어떤 토지이용에 있는가: 용도지역 비율
+fig, axes = plt.subplots(1, 3, figsize=(16, 5.2))
+for ax, c in zip(axes, [&quot;전용·제1·2종일반주거&quot;, &quot;제3종일반주거&quot;, &quot;준주거·상업&quot;]):
+    t, r = d[d[&quot;ac_town&quot;]][c] * 100, d[~d[&quot;ac_town&quot;]][c] * 100
+    bp = ax.boxplot([t, r], tick_labels=[f&quot;학원 특화 동\n({len(t)}곳)&quot;, f&quot;그 외 동\n({len(r)}곳)&quot;], patch_artist=True, widths=0.55)
+    for patch, col in zip(bp[&quot;boxes&quot;], [&quot;#f59e6c&quot;, &quot;#9ecae1&quot;]):
+        patch.set_facecolor(col)
+    rho = spearmanr(d[&quot;lq&quot;], d[c])[0]
+    ax.set_title(f&quot;{c} 비율 (%)\n중앙값 {t.median():.0f} vs {r.median():.0f} · LQ와 상관계수 {rho:+.2f}&quot;, fontsize=12)
+    ax.grid(alpha=0.25, axis=&quot;y&quot;)
+fig.suptitle(&quot;⑥ 학원 특화 동은 제3종일반주거 비율이 높고 준주거·상업 비율은 낮다&quot;, fontsize=14)
+plt.tight_layout()
+plt.savefig(&quot;image/academy3_fig6_zoning.png&quot;, dpi=150)
+plt.show()</pre></details></section><section class="md"><h2>5. 종합 해석</h2>
+<p><strong>연구 질문에 대한 답.</strong> 학원가는 도시의 다양성이 낮은가? <strong>전체 업종으로 보면 다소 낮지만, 그것은 학원이 매출의 큰 몫을 차지하기 때문이며 학원을 제외하면 서울의 다른 동과 같다.</strong> 학원가는 단조로운 동네라기보다, 일반적인 주거 근린 상권에 학원이라는 큰 업종이 더해진 동네에 가깝다(이 마지막 표현은 추정이다). 과제가 묻는 네 가지 질문에 차례로 답한다.</p>
+<p><strong>① 값이 높은 곳과 낮은 곳은 어디인가</strong></p>
+<ul><li><strong>학원 비중(LQ)이 가장 높은 곳</strong>은 목5동, 중계1동, 대치1동, 돈암1동, 반포2동이다. <strong>학원 밀도(학생 1인당)가 가장 높은 곳</strong>은 대치4동, 명일2동, 대치2동, 대치1동이다(노량진2동은 예외). 같은 학원가라도 학원 비중이 가장 큰 동네와 학생 1인당 학원 매출이 가장 큰 동네는 일부 다르다.</li><li><strong>업종 다양성이 가장 낮은 곳</strong>은 학원가가 아니라 노량진·제기동·독산1동 같은 시장·전문상가 일대다.</li></ul>
+<p><strong>② 지표 간에 비슷하거나 다른 공간 패턴이 나타나는가</strong></p>
+<ul><li><strong>비슷한 패턴:</strong> LQ와 학원 밀도는 같은 동네를 가리킨다(상관계수 +0.83). 둘 다 강남·서초·송파 띠와 양천, 노원, 성북의 거점에 몰린다.</li><li><strong>다른 패턴:</strong> 업종 다양성(Gini–Simpson)은 학원 지표와 같은 군집을 만들지 않고, 학원 특화 동과 그 외 동의 차이도 작다(학원을 제외하면 차이가 거의 없음). 학원이 많다는 것과 상권이 단조롭다는 것은 별개의 현상이다.</li><li><strong>갈리는 동:</strong> 중계1동(LQ 높음, 밀도 낮음), 노량진2동(밀도 높음, LQ 낮음)처럼 두 지표가 다르게 읽히는 동이 있어, 두 지표를 함께 보는 의미가 있다.</li></ul>
+<p><strong>③ 관찰된 패턴을 도시 구조나 토지이용 특성과 어떻게 연결할 수 있는가</strong></p>
+<ul><li>학원 특화 동 29곳의 전용·일반주거 합계 비율은 최소 68%, 중앙값 97%이고, 준주거·상업 비율(중앙값 3%)은 서울 다른 동(6%)의 절반이다. 학원 LQ는 <strong>제3종일반주거 비율과 가장 강한 양의 상관(+0.39)</strong>을, 준주거·상업 비율과는 음의 상관(−0.22)을 보이고, 전용·제1·2종일반주거와는 거의 무관하다(−0.07).</li><li>제3종일반주거는 법적으로 중·고층 주택이 중심이 되는 지역이므로, 학원가는 준주거·상업지구가 아니라 <strong>중·고층 주택 중심의 주거지</strong>에 모인다고 해석할 수 있다. 같은 주거지라도 저층·중층 위주의 전용·제1·2종일반주거에서는 그렇지 않았다. 대치·반포(강남권), 목동·신정(양천), 중계(노원), 돈암(성북)이 그 예다.</li><li>학원 특화 동 안에서도 유형이 갈린다. 목5동·중계1동은 학원을 제외하면 평범한 상권이어서 주거지형 학원가이고, 돈암1동은 학원 외 상권도 약하다.</li></ul>
+<p><strong>④ 분석 결과만으로는 설명할 수 없는 점은 무엇인가</strong></p>
+<ol><li><strong>추정 매출이다.</strong> 카드 결제를 바탕으로 한 추정값이라 계좌이체가 많은 학원은 실제보다 작게 잡혔을 수 있다. 매출은 분기별 합계로 제공되며, 학원 밀도는 이 분기 매출을 기준으로 한 값이다. 동 사이 비중(LQ, 다양성)은 비율이라 매출의 기간 단위와 무관하다.</li><li><strong>점포 소재지 기준이다.</strong> 매출은 학원이 있는 동에 잡히고 학생이 사는 동과는 관계가 없다. 학원 밀도의 분모(생활인구)는 하루 8개 시간대의 평균이라 학교나 집에 있는 학생도 포함하며, 학원에 다니는 학생만 센 것이 아니다.</li><li><strong>"학원" 업종 정의의 한계가 있다.</strong> 일반교습학원이 청소년 입시·보습 학원을 대표하지만, 영어 어학원은 외국어학원으로 분류되어 빠졌을 수 있고 성인 대상 학원이 섞여 있을 수 있다(노량진2동이 그 예일 수 있다). 업종 분류의 세부 정의는 확인하지 못했다.</li><li><strong>"학원 특화 동"의 정의가 결과에 영향을 준다.</strong> 기준(LQ 1.5, +10%p)은 분석자가 정했고, 정의에 따라 일부 비교 결과가 달라질 수 있다(예: 다양성 비교).</li><li><strong>행정동 경계의 영향(MAUP)이 있다.</strong> 대치동은 대치1·2·4동으로 나뉘어 있어서 하나로 묶으면 값이 달라질 수 있다.</li><li><strong>용도지역은 법적 구분이다.</strong> 주거지역 안에도 상가가 있고 학원은 상가 건물에 입지하므로, 용도지역과의 상관은 주거지에 둘러싸인 상가를 뜻할 수 있다. 이 해석은 자료로 검증하지 않았다. 세 구분의 비율이 서로 반대로 움직이는 점도 고려해야 한다. 준주거지역을 상업지역과 묶은 것은 분석자의 분류이며, 다르게 분류했을 때의 결과 차이는 확인하지 않았다.</li><li><strong>한 분기(2026년 2분기)의 단면이다.</strong> 학원가가 어떻게 생기고 변해 왔는지, 아파트가 학원을 부르는지 학원이 아파트 가치를 높이는지는 알 수 없다. 상관관계일 뿐 인과관계가 아니다.</li><li><strong>생활밀착 63개 업종만 다뤘다.</strong> 백화점, 사무실, 온라인 소비는 없고, 다양성은 업종 구성으로만 쟀다. 거리의 분위기나 소음 같은 체감은 반영하지 못했다.</li></ol></section>
+<p class="meta">자료 출처: 서울 열린데이터광장(상권분석서비스 추정매출, 생활인구), 도시계획정보서비스(용도지역), 행정동 경계. 계산 코드와 출력은 각 그림 아래에서 펼쳐 볼 수 있다.</p>
+</main></body></html>
